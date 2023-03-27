@@ -1,5 +1,5 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import './Recipes.css';
+import RecipyCollection from '../components/RecipyCollection';
 
 const Recipes: React.FC = () => {
   return (
@@ -15,6 +15,9 @@ const Recipes: React.FC = () => {
             <IonTitle size="large">Recepten</IonTitle>
           </IonToolbar>
         </IonHeader>
+
+        <RecipyCollection/>
+      
       </IonContent>
     </IonPage>
   );
