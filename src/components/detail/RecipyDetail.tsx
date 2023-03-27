@@ -1,5 +1,6 @@
-import { IonIcon } from "@ionic/react";
-import { starOutline } from "ionicons/icons";
+import Rating from "../Rating";
+import Ingredients from "./Ingredients";
+import Methods from "./Methods";
 
 const RecipyDetail: React.FC = () => {
   return (
@@ -8,30 +9,9 @@ const RecipyDetail: React.FC = () => {
       <div className="flex flex-col p-2">
         <div className="font-bold mt-2">Bread</div>
         <div className="my-2">Door Polo</div>
-        <div className="mb-2 flex items-center">
-          <IonIcon
-            aria-hidden="true"
-            className="text-yellow-500"
-            icon={starOutline}
-          />
-          <IonIcon
-            aria-hidden="true"
-            className="text-yellow-500"
-            icon={starOutline}
-          />
-          <IonIcon
-            aria-hidden="true"
-            className="text-yellow-500"
-            icon={starOutline}
-          />
-          <IonIcon
-            aria-hidden="true"
-            className="text-yellow-500"
-            icon={starOutline}
-          />
-
-          <div className="ml-2">4 ratings</div>
-        </div>
+        <Rating />
+        <Ingredients />
+        <Methods />
       </div>
     </div>
   );
