@@ -1,23 +1,12 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import RecipyCollection from '../components/RecipyCollection';
+import { IonContent, IonPage } from "@ionic/react";
+import RecipeCollection from "../components/RecipeCollection";
+import "./Recipes.css";
 
 const Recipes: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Recepten</IonTitle>
-        </IonToolbar>
-      </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Recepten</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-
-        <RecipyCollection/>
-      
+        <RecipeCollection />
       </IonContent>
     </IonPage>
   );

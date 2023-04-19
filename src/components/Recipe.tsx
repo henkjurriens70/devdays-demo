@@ -1,14 +1,12 @@
-import { IonIcon, IonRouterLink } from "@ionic/react";
-import { starOutline } from "ionicons/icons";
-import { Link } from "react-router-dom";
+import { IonRouterLink } from "@ionic/react";
 import Rating from "./Rating";
 
-const Recipy: React.FC = () => {
+const Recipe: React.FC = () => {
   return (
     <>
       <IonRouterLink href="/detail">
         <div className="flex flex-col">
-          <img className="w-full" src="/assets/images/bread.png" />
+          <img className="w-full" src="/assets/images/burger.jpg" alt="" />
           <div className="flex flex-col">
             <div className="font-bold mt-2">Bread</div>
             <Rating />
@@ -23,4 +21,4 @@ const Recipy: React.FC = () => {
   );
 };
 
-export default Recipy;
+export default Recipe;
